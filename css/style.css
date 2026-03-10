@@ -1005,13 +1005,41 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   .company-row__date { grid-column: 2; grid-row: 2; align-self: start; }
   .company-row__desc { display: none; }
 
-  /* Portfolio — realized table: horizontal scroll */
-  .realized-table-wrap {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    margin: 0 -20px;
-    padding: 0 20px;
+  /* Portfolio — realized table: hide description col, no scroll */
+  .realized-table th:nth-child(3),
+  .realized-table td:nth-child(3) {
+    display: none;
   }
+
+  .realized-table-wrap {
+    overflow-x: visible;
+    margin: 0;
+    padding: 0;
+  }
+
+  .realized-table td:first-child {
+    white-space: normal;
+  }
+
+  /* Portfolio — platform header: stack vertically to prevent overlap */
+  .platform-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 16px 20px;
+  }
+
+  /* Hero buttons — equal width */
+  .hero__actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Industries grid — fix borders for 2-col layout */
+  .industries-grid .industry-item:nth-child(3n) { border-right: 1px solid var(--border); }
+  .industries-grid .industry-item:nth-child(2n) { border-right: none; }
+  .industries-grid .industry-item:nth-last-child(-n+3) { border-bottom: 1px solid var(--border); }
+  .industries-grid .industry-item:nth-last-child(-n+2) { border-bottom: none; }
 
   /* Footer */
   .footer__inner {
