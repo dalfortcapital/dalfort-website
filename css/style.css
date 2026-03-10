@@ -1026,6 +1026,8 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   nav.nav--hero.nav--open .logo__d { color: var(--text); border-color: var(--text); }
   nav.nav--hero.nav--open .logo__name { color: var(--text); }
   nav.nav--hero.nav--open .nav__toggle span { background: var(--text); }
+  nav.nav--hero.nav--open .nav__links a { color: var(--text); }
+  nav.nav--hero.nav--open .nav__links a.is-active { color: var(--green); }
 
   /* Section spacing */
   .section { padding: 60px 20px; }
