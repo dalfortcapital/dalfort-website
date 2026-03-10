@@ -880,6 +880,15 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   border-bottom: 1px solid var(--border);
 }
 
+/* ── Hero page — remove top offset so video fills behind nav ── */
+.page--hero {
+  padding-top: 0;
+}
+
+.page--hero .hero {
+  min-height: 100vh;
+}
+
 /* ── Hero nav (transparent, becomes solid on scroll) ────────── */
 .nav--hero {
   background: transparent;
