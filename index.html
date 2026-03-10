@@ -13,7 +13,7 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="nav">
+  <nav class="nav nav--hero">
     <div class="nav__inner">
       <a href="index.html" class="logo">
         <span class="logo__d">D</span>
@@ -121,6 +121,18 @@
         this.closest('nav').classList.remove('nav--open');
       });
     });
+
+    // Transparent nav: become solid once hero scrolls out of view
+    (function () {
+      var nav = document.querySelector('.nav--hero');
+      var hero = document.querySelector('.hero');
+      if (!nav || !hero) return;
+      function update() {
+        nav.classList.toggle('nav--scrolled', hero.getBoundingClientRect().bottom <= 80);
+      }
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    })();
   </script>
 </body>
 </html>
