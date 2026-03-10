@@ -1,3 +1,6 @@
 .DS_Store
 Thumbs.db
 *.tmp
+images/extracted-kelly/
+images/extracted/
+images/extracted-flipdeck/
