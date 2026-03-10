@@ -1006,6 +1006,27 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
 
   nav.nav--open .nav__links { display: flex; }
 
+  /* Hero nav: transparent on mobile too */
+  .nav--hero {
+    background: transparent;
+    border-bottom-color: transparent;
+  }
+
+  /* Solid when scrolled past hero */
+  .nav--hero.nav--scrolled {
+    background: var(--bg);
+    border-bottom-color: var(--border);
+  }
+
+  /* Solid when mobile menu is open (so dropdown has a background) */
+  nav.nav--hero.nav--open {
+    background: var(--bg);
+    border-bottom-color: var(--border);
+  }
+  nav.nav--hero.nav--open .logo__d { color: var(--text); border-color: var(--text); }
+  nav.nav--hero.nav--open .logo__name { color: var(--text); }
+  nav.nav--hero.nav--open .nav__toggle span { background: var(--text); }
+
   /* Section spacing */
   .section { padding: 60px 20px; }
 
