@@ -116,6 +116,33 @@ body {
   border-bottom-color: var(--text);
 }
 
+/* ── Mobile nav toggle (hamburger) ─────────────────────────── */
+.nav__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  width: 36px;
+  height: 36px;
+}
+
+.nav__toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 1px;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+nav.nav--open .nav__toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+nav.nav--open .nav__toggle span:nth-child(2) { opacity: 0; }
+nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 /* ── Page Wrapper ───────────────────────────────────────────── */
 .page {
   padding-top: var(--nav-h);
@@ -872,10 +899,55 @@ body {
 }
 
 @media (max-width: 640px) {
-  .nav__links { display: none; }
 
+  /* Nav — show hamburger, hide links by default */
+  .nav__toggle { display: flex; }
+
+  .nav__links {
+    display: none;
+    position: fixed;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    border-bottom: 1px solid var(--border);
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+
+  .nav__links li {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav__links li:last-child {
+    border-bottom: none;
+  }
+
+  .nav__links a {
+    display: block;
+    padding: 15px 24px;
+    font-size: 11px;
+    border-bottom: none;
+  }
+
+  .nav__links a.is-active {
+    border-bottom: none;
+    color: var(--green);
+  }
+
+  nav.nav--open .nav__links { display: flex; }
+
+  /* Section spacing */
+  .section { padding: 60px 20px; }
+
+  /* Hero */
   .hero__title { font-size: clamp(38px, 10vw, 56px); }
+  .hero__actions { flex-direction: column; align-items: flex-start; gap: 12px; }
 
+  /* Cards */
   .cards,
   .process-cards,
   .portfolio-grid {
@@ -888,6 +960,7 @@ body {
   .portfolio-item {
     border-right: none !important;
     border-bottom: 1px solid var(--border) !important;
+    padding: 28px 20px;
   }
 
   .card:last-child,
@@ -896,14 +969,51 @@ body {
     border-bottom: none !important;
   }
 
+  /* Stats */
   .stats { grid-template-columns: 1fr; }
   .stat + .stat {
     border-left: none;
     border-top: 1px solid var(--border);
   }
 
-  .team-grid { grid-template-columns: 1fr; }
+  /* About — by-the-numbers: 2 col */
+  .by-numbers { grid-template-columns: 1fr 1fr; }
 
+  /* About — industries grid: 2 col */
+  .industries-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Team */
+  .team-grid { grid-template-columns: 1fr 1fr; }
+  .team-card__photo { aspect-ratio: 3/4; max-height: 300px; }
+
+  /* Portfolio — current investments: 2-col (logo + name/date) */
+  .company-row {
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: auto auto;
+    gap: 6px 14px;
+    padding: 14px 16px;
+  }
+
+  .company-row__logo {
+    grid-row: 1 / 3;
+    width: 60px;
+    height: 48px;
+    align-self: center;
+  }
+
+  .company-row__name { grid-column: 2; grid-row: 1; align-self: end; }
+  .company-row__date { grid-column: 2; grid-row: 2; align-self: start; }
+  .company-row__desc { display: none; }
+
+  /* Portfolio — realized table: horizontal scroll */
+  .realized-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+
+  /* Footer */
   .footer__inner {
     grid-template-columns: 1fr;
     gap: 32px;
