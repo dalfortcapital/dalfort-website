@@ -649,7 +649,7 @@ body {
   margin: 0 auto;
   padding: 64px var(--px) 48px;
   display: grid;
-  grid-template-columns: auto 1fr 1fr 1fr;
+  grid-template-columns: auto 1fr 1fr;
   gap: 60px;
   align-items: start;
 }
