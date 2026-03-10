@@ -997,11 +997,12 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
     padding: 15px 24px;
     font-size: 11px;
     border-bottom: none;
+    color: var(--text) !important;
   }
 
   .nav__links a.is-active {
     border-bottom: none;
-    color: var(--green);
+    color: var(--green) !important;
   }
 
   nav.nav--open .nav__links { display: flex; }
