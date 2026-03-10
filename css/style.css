@@ -880,6 +880,9 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   border-bottom: 1px solid var(--border);
 }
 
+/* ── Mobile-only line break ─────────────────────────────────── */
+.mobile-br { display: none; }
+
 /* ── Responsive ─────────────────────────────────────────────── */
 @media (max-width: 900px) {
   .nav__links { gap: 20px; }
@@ -1034,6 +1037,9 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
     width: 100%;
     text-align: center;
   }
+
+  /* Mobile-only line break — activate */
+  .mobile-br { display: inline; }
 
   /* Industries grid — fix borders for 2-col layout */
   .industries-grid .industry-item:nth-child(3n) { border-right: 1px solid var(--border); }
