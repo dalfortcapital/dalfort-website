@@ -447,56 +447,61 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
 /* ── Team Grid ──────────────────────────────────────────────── */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 48px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
 }
 
-.team-card__photo {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  background-color: var(--border);
-  margin-bottom: 22px;
-  overflow: hidden;
-  position: relative;
+.team-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 28px 24px 24px;
   cursor: pointer;
+  transition: background 0.22s ease, border-color 0.22s ease;
 }
 
-.team-card__bio-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(18, 44, 30, 0.93);
+.team-card:hover:not(.is-active) {
+  border-color: #c5c0b8;
+  background: #faf8f5;
+}
+
+.team-card.is-active {
+  background: var(--green);
+  border-color: var(--green);
+}
+
+.team-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--green);
   color: var(--white);
-  padding: 28px 24px;
   display: flex;
   align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  overflow-y: auto;
-}
-
-.team-card__bio-overlay p {
-  font-size: 13px;
-  line-height: 1.85;
+  justify-content: center;
   font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 18px;
+  flex-shrink: 0;
 }
 
-.team-card__photo:hover .team-card__bio-overlay {
-  opacity: 1;
-}
-
-.team-card__photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  display: block;
+.team-card.is-active .team-avatar {
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .team-card__name {
   font-family: var(--font-serif);
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 4px;
+  color: var(--text);
+  transition: color 0.22s ease;
+}
+
+.team-card.is-active .team-card__name {
+  color: var(--white);
 }
 
 .team-card__role {
@@ -505,13 +510,24 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-muted);
-  margin-bottom: 16px;
+  transition: color 0.22s ease;
+}
+
+.team-card.is-active .team-card__role {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .team-card__bio {
-  font-size: 13.5px;
-  line-height: 1.8;
-  color: var(--text-muted);
+  display: none;
+  font-size: 13px;
+  line-height: 1.78;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--font-sans);
+  margin-top: 16px;
+}
+
+.team-card.is-active .team-card__bio {
+  display: block;
 }
 
 .team-subsection {
@@ -1074,7 +1090,6 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
 
   /* Team */
   .team-grid { grid-template-columns: 1fr 1fr; }
-  .team-card__photo { aspect-ratio: 3/4; max-height: 300px; }
 
   /* Portfolio — current investments: 2-col (logo + name/date) */
   .company-row {
