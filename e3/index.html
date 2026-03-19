@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DalFort Capital Partners</title>
+  <meta name="description" content="DalFort Capital Partners is a Dallas-based investment firm focused on the lower middle market. Operators who invest. Partners who build.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav nav--hero">
+    <div class="nav__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__wordmark">DalFort</span><span class="logo__divider"><svg width="12" height="28" viewBox="0 0 12 28" xmlns="http://www.w3.org/2000/svg"><line x1="6" y1="0" x2="6" y2="8" stroke="#C8945A" stroke-width="0.75"/><polygon points="6,8 7.2,11.4 10.8,11.4 7.9,13.6 9,17 6,15 3,17 4.1,13.6 1.2,11.4 4.8,11.4" fill="#C8945A"/><line x1="6" y1="17" x2="6" y2="28" stroke="#C8945A" stroke-width="0.75"/></svg></span><span class="logo__sub"><span>Capital</span><span>Partners</span></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="is-active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="approach.html">Approach</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page -->
+  <div class="page page--hero">
+
+    <!-- Hero -->
+    <section class="hero">
+      <video class="hero__video" autoplay muted loop playsinline>
+        <source src="../images/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Operators who invest.<br>
+          <em>Partners who build.</em>
+        </h1>
+        <div class="hero__actions">
+          <a href="approach.html" class="btn btn--primary">How We Work</a>
+          <a href="contact.html" class="btn btn--outline">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Believe -->
+    <div class="section">
+      <p class="section-label">What We Believe</p>
+      <h2 class="section-title">
+        The best investments start with <em>showing up.</em>
+      </h2>
+      <div class="cards">
+        <div class="card">
+          <h3 class="card__title">Permanent Capital</h3>
+          <p class="card__body">Our investors have long-term horizons with no contractual hold periods. We exit when it's right for the business, not when a fund clock runs out.</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Operator-Led</h3>
+          <p class="card__body">Our team has built and run industrial businesses. When we sit across the table, we've been on your side of it.</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Embedded Partnership</h3>
+          <p class="card__body">Our operating partners work on-site alongside your team. Not quarterly check-ins. Real, daily collaboration.</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Strategic Growth</h3>
+          <p class="card__body">We identify and execute add-on acquisitions that strengthen customer relationships and expand into new markets.</p>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /page -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="index.html" class="logo footer__logo">
+        <span class="logo__wordmark">DalFort</span><span class="logo__divider"><svg width="12" height="28" viewBox="0 0 12 28" xmlns="http://www.w3.org/2000/svg"><line x1="6" y1="0" x2="6" y2="8" stroke="#C8945A" stroke-width="0.75"/><polygon points="6,8 7.2,11.4 10.8,11.4 7.9,13.6 9,17 6,15 3,17 4.1,13.6 1.2,11.4 4.8,11.4" fill="#C8945A"/><line x1="6" y1="17" x2="6" y2="28" stroke="#C8945A" stroke-width="0.75"/></svg></span><span class="logo__sub"><span>Capital</span><span>Partners</span></span>
+      </a>
+      <div class="footer__col">
+        <h4>Firm</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="approach.html">Approach</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      &copy; 2026 DalFort Capital. All rights reserved. Dallas, Texas.
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav__toggle').addEventListener('click', function () {
+      this.closest('nav').classList.toggle('nav--open');
+    });
+    document.querySelectorAll('.nav__links a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        this.closest('nav').classList.remove('nav--open');
+      });
+    });
+
+    // Transparent nav: become solid once hero scrolls out of view
+    (function () {
+      var nav = document.querySelector('.nav--hero');
+      var hero = document.querySelector('.hero');
+      if (!nav || !hero) return;
+      function update() {
+        nav.classList.toggle('nav--scrolled', hero.getBoundingClientRect().bottom <= 80);
+      }
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    })();
+  </script>
+</body>
+</html>
