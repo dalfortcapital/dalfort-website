@@ -747,7 +747,7 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
 }
 
 .footer__logo .logo__wordmark { color: var(--cream); }
-.footer__logo .logo__tagline { color: var(--slate); }
+.footer__logo .logo__tagline { color: rgba(255, 255, 255, 0.7); }
 .footer__logo .logo__rule { width: 110px; height: 12px; }
 
 .footer__col h4 {
