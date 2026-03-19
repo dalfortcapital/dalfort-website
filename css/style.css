@@ -61,87 +61,44 @@ body {
   justify-content: space-between;
 }
 
-/* ── Logo (horizontal lockup for nav) ───────────────────────── */
+/* ── Logo ───────────────────────────────────────────────────── */
 .logo {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 10px;
   text-decoration: none;
+  color: var(--text);
 }
 
-.logo__wordmark {
+.logo__d {
   font-family: var(--font-serif);
   font-size: 26px;
-  font-weight: 400;
-  letter-spacing: 0.12em;
-  color: var(--text);
-  transition: color 0.35s ease;
+  font-weight: 500;
   line-height: 1;
-}
-
-.logo__divider {
-  display: block;
-  flex-shrink: 0;
-}
-
-.logo__sub {
   display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-
-.logo__cap,
-.logo__part {
-  font-family: var(--font-sans);
-  font-size: 8px;
-  font-weight: 500;
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  transition: color 0.35s ease;
-  line-height: 1;
-}
-
-/* ── Logo (primary stacked lockup — footer only) ────────────── */
-.logo__rule {
-  display: block;
-  width: 100px;
-  height: 12px;
-}
-
-.logo__tagline {
-  font-family: var(--font-sans);
-  font-size: 8px;
-  font-weight: 500;
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  transition: color 0.35s ease;
-  line-height: 1;
-  margin-top: 2px;
-}
-
-/* ── Footer logo override (primary stacked) ─────────────────── */
-.footer__logo {
-  flex-direction: column;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1.5px solid var(--text);
+  border-radius: 0 50% 50% 0;
 }
 
-.footer__logo .logo__wordmark {
-  font-size: 26px;
-  font-weight: 400;
-  letter-spacing: 0.14em;
+.logo__name {
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* ── Footer logo ─────────────────────────────────────────────── */
+.footer__logo .logo__d {
   color: var(--white);
+  border-color: rgba(255, 255, 255, 0.6);
 }
 
-.footer__logo .logo__rule { width: 110px; height: 12px; }
-
-.footer__logo .logo__tagline {
-  color: rgba(255, 255, 255, 0.65);
-  margin-top: 2px;
-}
+.footer__logo .logo__name { color: var(--white); }
 
 .nav__links {
   display: flex;
@@ -958,14 +915,14 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   transition: background-color 0.35s ease, border-color 0.35s ease;
 }
 
-.nav--hero .logo__wordmark {
+.nav--hero .logo__d {
   color: var(--white);
+  border-color: rgba(255, 255, 255, 0.65);
   transition: color 0.35s ease, border-color 0.35s ease;
 }
 
-.nav--hero .logo__cap,
-.nav--hero .logo__part {
-  color: rgba(255, 255, 255, 0.7);
+.nav--hero .logo__name {
+  color: var(--white);
   transition: color 0.35s ease;
 }
 
@@ -990,9 +947,8 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   border-bottom-color: var(--border);
 }
 
-.nav--hero.nav--scrolled .logo__wordmark { color: var(--text); }
-.nav--hero.nav--scrolled .logo__cap,
-.nav--hero.nav--scrolled .logo__part { color: var(--text-muted); }
+.nav--hero.nav--scrolled .logo__d { color: var(--text); border-color: var(--text); }
+.nav--hero.nav--scrolled .logo__name { color: var(--text); }
 .nav--hero.nav--scrolled .nav__links a { color: var(--text); }
 
 .nav--hero.nav--scrolled .nav__links a:hover,
@@ -1083,9 +1039,8 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
     background: var(--bg);
     border-bottom-color: var(--border);
   }
-  nav.nav--hero.nav--open .logo__wordmark { color: var(--text); }
-  nav.nav--hero.nav--open .logo__cap,
-  nav.nav--hero.nav--open .logo__part { color: var(--text-muted); }
+  nav.nav--hero.nav--open .logo__d { color: var(--text); border-color: var(--text); }
+  nav.nav--hero.nav--open .logo__name { color: var(--text); }
   nav.nav--hero.nav--open .nav__toggle span { background: var(--text); }
   nav.nav--hero.nav--open .nav__links a { color: var(--text); }
   nav.nav--hero.nav--open .nav__links a.is-active { color: var(--green); }
