@@ -1,0 +1,22 @@
+<svg width="360" height="80" viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- DalFort Capital Partners — Horizontal Lockup (Dark) -->
+  <!-- Fonts: Cormorant Garamond (400), Inter (500) — install or load via Google Fonts -->
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&amp;family=Inter:wght@500&amp;display=swap');
+    </style>
+  </defs>
+  <rect width="360" height="80" fill="#0E1620"/>
+  <text x="190" y="46" text-anchor="end"
+        font-family="'Cormorant Garamond', Georgia, serif"
+        font-size="34" font-weight="400" letter-spacing="3" fill="#E8E4DD">DalFort</text>
+  <line x1="202" y1="10" x2="202" y2="30" stroke="#C8945A" stroke-width="0.75"/>
+  <polygon points="202,33 203.6,37 207,37 204.2,39.5 205.2,43 202,40.5 198.8,43 199.8,39.5 197,37 200.4,37" fill="#C8945A"/>
+  <line x1="202" y1="46" x2="202" y2="68" stroke="#C8945A" stroke-width="0.75"/>
+  <text x="214" y="35" text-anchor="start"
+        font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-size="10.5" font-weight="500" letter-spacing="4.5" fill="#A8B4C4">CAPITAL</text>
+  <text x="214" y="49" text-anchor="start"
+        font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-size="10.5" font-weight="500" letter-spacing="4.5" fill="#A8B4C4">PARTNERS</text>
+</svg>
