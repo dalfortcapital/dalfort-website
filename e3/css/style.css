@@ -70,13 +70,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3px;
+  gap: 4px;
   text-decoration: none;
 }
 
 .logo__wordmark {
   font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 500;
   letter-spacing: 0.16em;
   color: var(--text);
@@ -86,20 +86,20 @@ body {
 
 .logo__rule {
   display: block;
-  width: 68px;
-  height: 8px;
+  width: 94px;
+  height: 11px;
 }
 
 .logo__tagline {
   font-family: var(--font-sans);
-  font-size: 6px;
+  font-size: 8px;
   font-weight: 500;
   letter-spacing: 0.4em;
   text-transform: uppercase;
   color: var(--slate);
   transition: color 0.35s ease;
   line-height: 1;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 /* ── Nav Links ──────────────────────────────────────────────── */
