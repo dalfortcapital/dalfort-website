@@ -273,14 +273,14 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
 }
 
 .btn--primary {
-  background-color: var(--green);
+  background-color: var(--gold);
   color: var(--white);
-  border-color: var(--green);
+  border-color: var(--gold);
 }
 
 .btn--primary:hover {
-  background-color: var(--green-hover);
-  border-color: var(--green-hover);
+  background-color: #b8833f;
+  border-color: #b8833f;
 }
 
 .btn--outline {
