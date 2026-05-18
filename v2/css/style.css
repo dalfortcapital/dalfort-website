@@ -394,7 +394,7 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   font-family: var(--font-serif);
   font-size: 80px;
   font-weight: 300;
-  color: var(--border);
+  color: rgba(27, 42, 74, 0.18);
   line-height: 1;
   user-select: none;
 }
@@ -444,7 +444,7 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   font-family: var(--font-serif);
   font-size: 30px;
   font-weight: 400;
-  color: var(--gold);
+  color: var(--green);
   line-height: 1;
 }
 
@@ -743,6 +743,11 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   display: flex;
   flex-direction: column;
   gap: 28px;
+  background: var(--white);
+  padding: 44px 40px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(14, 22, 32, 0.06);
 }
 
 .form-group {
