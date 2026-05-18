@@ -39,11 +39,8 @@
 
     <!-- Hero -->
     <section class="hero">
-      <video class="hero__video hero__video--a" autoplay muted loop playsinline>
+      <video class="hero__video" autoplay muted loop playsinline>
         <source src="../images/hero-dallas.mp4" type="video/mp4">
-      </video>
-      <video class="hero__video hero__video--b" autoplay muted loop playsinline>
-        <source src="../images/hero-dallas-2.mp4" type="video/mp4">
       </video>
       <div class="hero__overlay"></div>
       <div class="hero__content">
@@ -133,25 +130,6 @@
       }
       window.addEventListener('scroll', update, { passive: true });
       update();
-    })();
-
-    // Hero video crossfade
-    (function () {
-      var a = document.querySelector('.hero__video--a');
-      var b = document.querySelector('.hero__video--b');
-      if (!a || !b) return;
-      b.style.opacity = '0';
-      var showingA = true;
-      setInterval(function () {
-        if (showingA) {
-          a.style.opacity = '0';
-          b.style.opacity = '1';
-        } else {
-          a.style.opacity = '1';
-          b.style.opacity = '0';
-        }
-        showingA = !showingA;
-      }, 8000);
     })();
   </script>
 </body>
