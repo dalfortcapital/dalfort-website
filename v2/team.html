@@ -186,6 +186,18 @@
 
   </div><!-- /page -->
 
+  <!-- Team bio modal -->
+  <div class="team-modal" id="teamModal" role="dialog" aria-modal="true" aria-labelledby="modalName">
+    <div class="team-modal__backdrop"></div>
+    <div class="team-modal__box">
+      <button class="team-modal__close" aria-label="Close">&times;</button>
+      <div class="team-modal__avatar" id="modalAvatar"></div>
+      <p class="team-modal__name" id="modalName"></p>
+      <p class="team-modal__role" id="modalRole"></p>
+      <p class="team-modal__bio" id="modalBio"></p>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__inner">
@@ -224,16 +236,28 @@
       });
     });
 
-    // Team card toggle
+    // Team bio modal
+    var modal = document.getElementById('teamModal');
+
     function toggleTeamCard(card) {
-      var wasActive = card.classList.contains('is-active');
-      document.querySelectorAll('.team-card').forEach(function (c) {
-        c.classList.remove('is-active');
-      });
-      if (!wasActive) {
-        card.classList.add('is-active');
-      }
+      document.getElementById('modalAvatar').textContent = card.querySelector('.team-avatar').textContent;
+      document.getElementById('modalName').textContent   = card.querySelector('.team-card__name').textContent;
+      document.getElementById('modalRole').textContent   = card.querySelector('.team-card__role').textContent;
+      document.getElementById('modalBio').textContent    = card.querySelector('.team-card__bio').textContent;
+      modal.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
     }
+
+    function closeModal() {
+      modal.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+
+    modal.querySelector('.team-modal__backdrop').addEventListener('click', closeModal);
+    modal.querySelector('.team-modal__close').addEventListener('click', closeModal);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeModal();
+    });
   </script>
 </body>
 </html>

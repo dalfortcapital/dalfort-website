@@ -506,17 +506,13 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   border-radius: 10px;
   padding: 28px 24px 24px;
   cursor: pointer;
-  transition: background 0.22s ease, border-color 0.22s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.team-card:hover:not(.is-active) {
+.team-card:hover {
   border-color: #c8c4bc;
-  background: #F5F3EF;
-}
-
-.team-card.is-active {
-  background: var(--green);
-  border-color: var(--green);
+  box-shadow: 0 4px 16px rgba(14, 22, 32, 0.08);
+  transform: translateY(-2px);
 }
 
 .team-avatar {
@@ -536,21 +532,12 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   flex-shrink: 0;
 }
 
-.team-card.is-active .team-avatar {
-  background: rgba(255, 255, 255, 0.18);
-}
-
 .team-card__name {
   font-family: var(--font-serif);
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 4px;
   color: var(--text);
-  transition: color 0.22s ease;
-}
-
-.team-card.is-active .team-card__name {
-  color: var(--white);
 }
 
 .team-card__role {
@@ -559,24 +546,110 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-muted);
-  transition: color 0.22s ease;
 }
 
-.team-card.is-active .team-card__role {
-  color: rgba(255, 255, 255, 0.6);
-}
+.team-card__bio { display: none; }
 
-.team-card__bio {
+/* ── Team Modal ─────────────────────────────────────────────── */
+.team-modal {
   display: none;
-  font-size: 13px;
-  line-height: 1.78;
-  color: rgba(255, 255, 255, 0.85);
-  font-family: var(--font-sans);
-  margin-top: 16px;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
 }
 
-.team-card.is-active .team-card__bio {
-  display: block;
+.team-modal.is-open {
+  display: flex;
+}
+
+.team-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(14, 22, 32, 0.55);
+  animation: modalFadeIn 0.2s ease;
+}
+
+.team-modal__box {
+  position: relative;
+  z-index: 1;
+  background: var(--white);
+  max-width: 540px;
+  width: 100%;
+  padding: 48px 44px 44px;
+  border-radius: 4px;
+  box-shadow: 0 24px 64px rgba(14, 22, 32, 0.18);
+  animation: modalSlideUp 0.25s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.team-modal__close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text-muted);
+  padding: 4px 6px;
+  transition: color 0.15s;
+}
+
+.team-modal__close:hover { color: var(--text); }
+
+.team-modal__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--green);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 22px;
+}
+
+.team-modal__name {
+  font-family: var(--font-serif);
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 6px;
+  line-height: 1.15;
+}
+
+.team-modal__role {
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+
+.team-modal__bio {
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--text-muted);
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes modalSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .team-subsection {
