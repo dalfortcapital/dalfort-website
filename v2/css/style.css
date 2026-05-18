@@ -218,13 +218,13 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  filter: contrast(1.1);
+  filter: contrast(1.2) saturate(1.1);
 }
 
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(14, 22, 32, 0.70);
+  background: rgba(14, 22, 32, 0.62);
   z-index: 1;
 }
 
