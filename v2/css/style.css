@@ -495,7 +495,11 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   padding: 14px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
+.focus-list li svg { flex-shrink: 0; opacity: 0.85; }
 
 .focus-list li:last-child {
   border-bottom: none;
