@@ -482,7 +482,6 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
 
 .focus-card__sub {
   font-size: 13px;
-  font-style: italic;
   color: var(--white);
   margin: 0 0 24px;
   line-height: 1.6;
