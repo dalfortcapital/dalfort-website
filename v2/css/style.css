@@ -480,6 +480,14 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   margin-bottom: 28px;
 }
 
+.focus-card__sub {
+  font-size: 13px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+  margin: -12px 0 24px;
+  line-height: 1.6;
+}
+
 .focus-list { list-style: none; }
 
 .focus-list li {
