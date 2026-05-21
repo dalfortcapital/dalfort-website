@@ -726,6 +726,7 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   line-height: 1.9;
   color: var(--text-muted);
   max-width: 380px;
+  text-align: justify;
 }
 
 .contact-detail { margin-top: 40px; }
@@ -744,6 +745,7 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
 .contact-detail__value {
   font-size: 15px;
   color: var(--text);
+  text-align: justify;
 }
 
 .contact-detail__value a {
