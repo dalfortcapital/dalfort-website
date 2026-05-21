@@ -462,6 +462,7 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   font-size: 15px;
   line-height: 1.9;
   color: var(--text-muted);
+  text-align: justify;
 }
 
 .about-text p + p { margin-top: 22px; }
