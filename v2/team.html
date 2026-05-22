@@ -214,7 +214,7 @@
       <div class="team-modal__avatar" id="modalAvatar"></div>
       <p class="team-modal__name" id="modalName"></p>
       <p class="team-modal__role" id="modalRole"></p>
-      <p class="team-modal__bio" id="modalBio"></p>
+      <div class="team-modal__bio" id="modalBio"></div>
     </div>
   </div>
 
@@ -264,7 +264,7 @@
       document.getElementById('modalAvatar').textContent = card.querySelector('.team-avatar').textContent;
       document.getElementById('modalName').textContent   = card.querySelector('.team-card__name').textContent;
       document.getElementById('modalRole').textContent   = card.querySelector('.team-card__role').textContent;
-      document.getElementById('modalBio').textContent    = card.querySelector('.team-card__bio').textContent;
+      document.getElementById('modalBio').innerHTML = Array.from(card.querySelectorAll('.team-card__bio')).map(function(p) { return '<p>' + p.textContent + '</p>'; }).join('');
       modal.classList.add('is-open');
       document.body.style.overflow = 'hidden';
     }
