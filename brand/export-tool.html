@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Assets — DalFort Capital Partners</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../v2/images/favicon.ico">
+  <link rel="stylesheet" href="../v2/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    .brand-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 48px;
+      align-items: flex-start;
+    }
+    .brand-card {
+      border: 1px solid var(--border);
+      padding: 24px;
+      background: var(--white);
+      display: inline-flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .brand-card__label {
+      font-family: var(--font-sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--slate);
+      margin: 0;
+    }
+    .brand-card svg {
+      display: block;
+    }
+    .brand-card .btn {
+      align-self: flex-start;
+    }
+    #status {
+      font-size: 13px;
+      color: var(--gold);
+      font-weight: 500;
+      margin-top: -8px;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="../v2/index.html" class="logo">
+        <span class="logo__wordmark">DalFort</span><svg class="logo__divider" width="10" height="36" viewBox="0 0 10 36" xmlns="http://www.w3.org/2000/svg"><line x1="5" y1="0" x2="5" y2="12" stroke="#C8945A" stroke-width="0.75"/><polygon points="5,13 6.6,17 10,17 7.2,19.5 8.2,23 5,20.5 1.8,23 2.8,19.5 0,17 3.4,17" fill="#C8945A"/><line x1="5" y1="24" x2="5" y2="36" stroke="#C8945A" stroke-width="0.75"/></svg><span class="logo__sub"><span class="logo__cap">CAPITAL</span><span class="logo__part">PARTNERS</span></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="../v2/index.html">Home</a></li>
+        <li><a href="../v2/about.html">About</a></li>
+        <li><a href="../v2/approach.html">Approach</a></li>
+        <li><a href="../v2/team.html">Team</a></li>
+        <li><a href="../v2/portfolio.html">Portfolio</a></li>
+        <li><a href="../v2/contact.html">Contact</a></li>
+        <li><a href="https://services.dataexchange.fiscloudservices.com/LogOn/?redirectUrl=%2F" target="_blank" rel="noopener noreferrer">Investor Portal</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page -->
+  <div class="page">
+    <div class="section">
+      <p class="section-label">Brand Assets</p>
+      <h1 class="section-title">Logo <em>downloads.</em></h1>
+      <p id="status">Loading fonts&hellip;</p>
+
+      <div class="brand-grid">
+
+        <!-- 1. Icon — Dark 400×400 -->
+        <div class="brand-card">
+          <p class="brand-card__label">Icon Mark — Dark (400×400)</p>
+          <!-- display at 200×200 -->
+          <svg width="200" height="200" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="80" height="80" rx="10" fill="#1B2A4A"/>
+            <polygon points="40,18 44,30 56,30 46.4,37.6 49.6,49.6 40,42 30.4,49.6 33.6,37.6 24,30 36,30" fill="#C8945A"/>
+          </svg>
+          <button class="btn btn--primary" onclick="capture('export-icon-dark','dalfort-icon-dark-400x400.png')">Download PNG</button>
+        </div>
+
+        <!-- 2. Icon — Light 400×400 -->
+        <div class="brand-card">
+          <p class="brand-card__label">Icon Mark — Light (400×400)</p>
+          <!-- display at 200×200 -->
+          <svg width="200" height="200" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="80" height="80" rx="10" fill="#FAFAF8" stroke="#E0DDD8" stroke-width="1"/>
+            <polygon points="40,18 44,30 56,30 46.4,37.6 49.6,49.6 40,42 30.4,49.6 33.6,37.6 24,30 36,30" fill="#C8945A"/>
+          </svg>
+          <button class="btn btn--primary" onclick="capture('export-icon-light','dalfort-icon-light-400x400.png')">Download PNG</button>
+        </div>
+
+        <!-- 3. LinkedIn Company Logo 300×300 -->
+        <div class="brand-card">
+          <p class="brand-card__label">LinkedIn Company Logo (300×300)</p>
+          <!-- display at 200×200 -->
+          <svg width="200" height="200" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="80" height="80" fill="#1B2A4A"/>
+            <polygon points="40,18 44,30 56,30 46.4,37.6 49.6,49.6 40,42 30.4,49.6 33.6,37.6 24,30 36,30" fill="#C8945A"/>
+          </svg>
+          <button class="btn btn--primary" onclick="capture('export-linkedin-logo','dalfort-linkedin-logo-300x300.png')">Download PNG</button>
+        </div>
+
+        <!-- 4. Horizontal — Dark 1200×267 -->
+        <div class="brand-card">
+          <p class="brand-card__label">Horizontal Lockup — Dark (1200×267)</p>
+          <!-- display at 450×100 (1.25x viewBox) -->
+          <svg width="450" height="100" viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="360" height="80" fill="#1B2A4A"/>
+            <text x="190" y="46" text-anchor="end" font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="400" letter-spacing="3" fill="#E8E4DD">DalFort</text>
+            <line x1="202" y1="10" x2="202" y2="30" stroke="#C8945A" stroke-width="0.75"/>
+            <polygon points="202,33 203.6,37 207,37 204.2,39.5 205.2,43 202,40.5 198.8,43 199.8,39.5 197,37 200.4,37" fill="#C8945A"/>
+            <line x1="202" y1="46" x2="202" y2="68" stroke="#C8945A" stroke-width="0.75"/>
+            <text x="214" y="35" text-anchor="start" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="500" letter-spacing="4.5" fill="#E8E4DD">CAPITAL</text>
+            <text x="214" y="49" text-anchor="start" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="500" letter-spacing="4.5" fill="#E8E4DD">PARTNERS</text>
+          </svg>
+          <button class="btn btn--primary" onclick="capture('export-horiz-dark','dalfort-horizontal-dark-1200x267.png')">Download PNG</button>
+        </div>
+
+        <!-- 5. Horizontal — Light 1200×267 -->
+        <div class="brand-card">
+          <p class="brand-card__label">Horizontal Lockup — Light (1200×267)</p>
+          <!-- display at 450×100 -->
+          <svg width="450" height="100" viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg">
+            <rect width="360" height="80" fill="#FAFAF8"/>
+            <text x="190" y="46" text-anchor="end" font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="400" letter-spacing="3" fill="#1B2A4A">DalFort</text>
+            <line x1="202" y1="10" x2="202" y2="30" stroke="#C8945A" stroke-width="0.75"/>
+            <polygon points="202,33 203.6,37 207,37 204.2,39.5 205.2,43 202,40.5 198.8,43 199.8,39.5 197,37 200.4,37" fill="#C8945A"/>
+            <line x1="202" y1="46" x2="202" y2="68" stroke="#C8945A" stroke-width="0.75"/>
+            <text x="214" y="35" text-anchor="start" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="500" letter-spacing="4.5" fill="#7A8BA5">CAPITAL</text>
+            <text x="214" y="49" text-anchor="start" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="500" letter-spacing="4.5" fill="#7A8BA5">PARTNERS</text>
+          </svg>
+          <button class="btn btn--primary" onclick="capture('export-horiz-light','dalfort-horizontal-light-1200x267.png')">Download PNG</button>
+        </div>
+
+        <!-- 6. Stacked — Dark 800×224 -->
+        <div class="brand-card">
+          <p class="brand-card__label">Stacked Lockup — Dark (800×224)</p>
+          <!-- display at 400×112 (exact viewBox) -->
+          <svg width="400" height="112" viewBox="0 0 400 112" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="112" fill="#1B2A4A"/>
+            <text x="200" y="52" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="42" font-weight="400" letter-spacing="5" fill="#E8E4DD">DalFort</text>
+            <line x1="70" y1="70" x2="184" y2="70" stroke="#C8945A" stroke-width="0.75"/>
+            <polygon points="200,60 202.5,67.6 210,67.6 204,72.4 206,80 200,75.2 194,80 196,72.4 190,67.6 197.5,67.6" fill="#C8945A"/>
+            <line x1="216" y1="70" x2="330" y2="70" stroke="#C8945A" stroke-width="0.75"/>
+            <text x="200" y="100" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="6" fill="#E8E4DD">CAPITAL PARTNERS</text>
+          </svg>
+          <button class="btn btn--primary" onclick="capture('export-stacked-dark','dalfort-stacked-dark-800x224.png')">Download PNG</button>
+        </div>
+
+        <!-- 7. Stacked — Light 800×224 -->
+        <div class="brand-card">
+          <p class="brand-card__label">Stacked Lockup — Light (800×224)</p>
+          <!-- display at 400×112 -->
+          <svg width="400" height="112" viewBox="0 0 400 112" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="112" fill="#FAFAF8"/>
+            <text x="200" y="52" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="42" font-weight="400" letter-spacing="5" fill="#1B2A4A">DalFort</text>
+            <line x1="70" y1="70" x2="184" y2="70" stroke="#C8945A" stroke-width="0.75"/>
+            <polygon points="200,60 202.5,67.6 210,67.6 204,72.4 206,80 200,75.2 194,80 196,72.4 190,67.6 197.5,67.6" fill="#C8945A"/>
+            <line x1="216" y1="70" x2="330" y2="70" stroke="#C8945A" stroke-width="0.75"/>
+            <text x="200" y="100" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="6" fill="#7A8BA5">CAPITAL PARTNERS</text>
+          </svg>
+          <button class="btn btn--primary" onclick="capture('export-stacked-light','dalfort-stacked-light-800x224.png')">Download PNG</button>
+        </div>
+
+        <!-- 8. LinkedIn Square Logo 400×400 -->
+        <div class="brand-card">
+          <p class="brand-card__label">LinkedIn Square Logo (400×400)</p>
+          <!-- display at 200×200 -->
+          <svg width="200" height="200" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="400" fill="#1B2A4A"/>
+            <text x="200" y="189" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="80" font-weight="400" letter-spacing="5" fill="#E8E4DD">DalFort</text>
+            <line x1="40" y1="224" x2="179" y2="224" stroke="#C8945A" stroke-width="1.5"/>
+            <polygon points="200,209 203.8,220.4 215,220.4 206,227.6 209,239 200,231.8 191,239 194,227.6 185,220.4 196.2,220.4" fill="#C8945A"/>
+            <line x1="221" y1="224" x2="360" y2="224" stroke="#C8945A" stroke-width="1.5"/>
+            <text x="200" y="269" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="10" fill="#E8E4DD">CAPITAL PARTNERS</text>
+          </svg>
+          <button class="btn btn--primary" onclick="capture('export-linkedin-square','dalfort-linkedin-square-400x400.png')">Download PNG</button>
+        </div>
+
+        <!-- 9. OG / Link Preview Image 1200×630 -->
+        <div class="brand-card">
+          <p class="brand-card__label">Link Preview Image (1200×630)</p>
+          <!-- display at 400×210 -->
+          <svg width="400" height="210" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+            <rect width="1200" height="630" fill="#1B2A4A"/>
+            <text x="600" y="290" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="105" font-weight="400" letter-spacing="12.5" fill="#E8E4DD">DalFort</text>
+            <line x1="275" y1="335" x2="560" y2="335" stroke="#C8945A" stroke-width="1.875"/>
+            <polygon points="600,310 606,329 625,329 610,341 615,360 600,348 585,360 590,341 575,329 594,329" fill="#C8945A"/>
+            <line x1="640" y1="335" x2="925" y2="335" stroke="#C8945A" stroke-width="1.875"/>
+            <text x="600" y="410" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="29" font-weight="500" letter-spacing="15" fill="#E8E4DD">CAPITAL PARTNERS</text>
+          </svg>
+          <button class="btn btn--primary" onclick="capture('export-og-image','dalfort-og-image-1200x630.png')">Download PNG</button>
+        </div>
+
+        <!-- 10. LinkedIn Company Banner 1128×191 -->
+        <div class="brand-card">
+          <p class="brand-card__label">LinkedIn Company Banner (1128×191)</p>
+          <!-- display at 400×68 -->
+          <svg width="400" height="68" viewBox="0 0 1128 191" xmlns="http://www.w3.org/2000/svg">
+            <rect width="1128" height="191" fill="#1B2A4A"/>
+            <line x1="0" y1="0" x2="1128" y2="0" stroke="#C8945A" stroke-width="1.5"/>
+            <g transform="translate(273.6 38) scale(1.4375)">
+              <text x="190" y="46" text-anchor="end" font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="400" letter-spacing="3" fill="#E8E4DD">DalFort</text>
+              <line x1="202" y1="10" x2="202" y2="30" stroke="#C8945A" stroke-width="0.75"/>
+              <polygon points="202,33 203.6,37 207,37 204.2,39.5 205.2,43 202,40.5 198.8,43 199.8,39.5 197,37 200.4,37" fill="#C8945A"/>
+              <line x1="202" y1="46" x2="202" y2="68" stroke="#C8945A" stroke-width="0.75"/>
+              <text x="214" y="35" text-anchor="start" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="500" letter-spacing="4.5" fill="#E8E4DD">CAPITAL</text>
+              <text x="214" y="49" text-anchor="start" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="500" letter-spacing="4.5" fill="#E8E4DD">PARTNERS</text>
+            </g>
+          </svg>
+          <button class="btn btn--primary" onclick="capture('export-linkedin-banner','dalfort-linkedin-banner-1128x191.png')">Download PNG</button>
+        </div>
+
+      </div><!-- /brand-grid -->
+    </div><!-- /section -->
+  </div><!-- /page -->
+
+  <!-- Hidden full-size export elements (off-screen) -->
+  <div style="position:absolute;left:-9999px;top:0;pointer-events:none;">
+
+    <div id="export-icon-dark">
+      <svg width="400" height="400" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+        <rect width="80" height="80" rx="10" fill="#1B2A4A"/>
+        <polygon points="40,18 44,30 56,30 46.4,37.6 49.6,49.6 40,42 30.4,49.6 33.6,37.6 24,30 36,30" fill="#C8945A"/>
+      </svg>
+    </div>
+
+    <div id="export-icon-light">
+      <svg width="400" height="400" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+        <rect width="80" height="80" rx="10" fill="#FAFAF8" stroke="#E0DDD8" stroke-width="1"/>
+        <polygon points="40,18 44,30 56,30 46.4,37.6 49.6,49.6 40,42 30.4,49.6 33.6,37.6 24,30 36,30" fill="#C8945A"/>
+      </svg>
+    </div>
+
+    <div id="export-linkedin-logo">
+      <svg width="300" height="300" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+        <rect width="80" height="80" fill="#1B2A4A"/>
+        <polygon points="40,18 44,30 56,30 46.4,37.6 49.6,49.6 40,42 30.4,49.6 33.6,37.6 24,30 36,30" fill="#C8945A"/>
+      </svg>
+    </div>
+
+    <div id="export-horiz-dark">
+      <svg width="1200" height="267" viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg">
+        <rect width="360" height="80" fill="#1B2A4A"/>
+        <text x="190" y="46" text-anchor="end" font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="400" letter-spacing="3" fill="#E8E4DD">DalFort</text>
+        <line x1="202" y1="10" x2="202" y2="30" stroke="#C8945A" stroke-width="0.75"/>
+        <polygon points="202,33 203.6,37 207,37 204.2,39.5 205.2,43 202,40.5 198.8,43 199.8,39.5 197,37 200.4,37" fill="#C8945A"/>
+        <line x1="202" y1="46" x2="202" y2="68" stroke="#C8945A" stroke-width="0.75"/>
+        <text x="214" y="35" text-anchor="start" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="500" letter-spacing="4.5" fill="#E8E4DD">CAPITAL</text>
+        <text x="214" y="49" text-anchor="start" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="500" letter-spacing="4.5" fill="#E8E4DD">PARTNERS</text>
+      </svg>
+    </div>
+
+    <div id="export-horiz-light">
+      <svg width="1200" height="267" viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg">
+        <rect width="360" height="80" fill="#FAFAF8"/>
+        <text x="190" y="46" text-anchor="end" font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="400" letter-spacing="3" fill="#1B2A4A">DalFort</text>
+        <line x1="202" y1="10" x2="202" y2="30" stroke="#C8945A" stroke-width="0.75"/>
+        <polygon points="202,33 203.6,37 207,37 204.2,39.5 205.2,43 202,40.5 198.8,43 199.8,39.5 197,37 200.4,37" fill="#C8945A"/>
+        <line x1="202" y1="46" x2="202" y2="68" stroke="#C8945A" stroke-width="0.75"/>
+        <text x="214" y="35" text-anchor="start" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="500" letter-spacing="4.5" fill="#7A8BA5">CAPITAL</text>
+        <text x="214" y="49" text-anchor="start" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="500" letter-spacing="4.5" fill="#7A8BA5">PARTNERS</text>
+      </svg>
+    </div>
+
+    <div id="export-stacked-dark">
+      <svg width="800" height="224" viewBox="0 0 400 112" xmlns="http://www.w3.org/2000/svg">
+        <rect width="400" height="112" fill="#1B2A4A"/>
+        <text x="200" y="52" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="42" font-weight="400" letter-spacing="5" fill="#E8E4DD">DalFort</text>
+        <line x1="70" y1="70" x2="184" y2="70" stroke="#C8945A" stroke-width="0.75"/>
+        <polygon points="200,60 202.5,67.6 210,67.6 204,72.4 206,80 200,75.2 194,80 196,72.4 190,67.6 197.5,67.6" fill="#C8945A"/>
+        <line x1="216" y1="70" x2="330" y2="70" stroke="#C8945A" stroke-width="0.75"/>
+        <text x="200" y="100" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="6" fill="#E8E4DD">CAPITAL PARTNERS</text>
+      </svg>
+    </div>
+
+    <div id="export-stacked-light">
+      <svg width="800" height="224" viewBox="0 0 400 112" xmlns="http://www.w3.org/2000/svg">
+        <rect width="400" height="112" fill="#FAFAF8"/>
+        <text x="200" y="52" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="42" font-weight="400" letter-spacing="5" fill="#1B2A4A">DalFort</text>
+        <line x1="70" y1="70" x2="184" y2="70" stroke="#C8945A" stroke-width="0.75"/>
+        <polygon points="200,60 202.5,67.6 210,67.6 204,72.4 206,80 200,75.2 194,80 196,72.4 190,67.6 197.5,67.6" fill="#C8945A"/>
+        <line x1="216" y1="70" x2="330" y2="70" stroke="#C8945A" stroke-width="0.75"/>
+        <text x="200" y="100" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="6" fill="#7A8BA5">CAPITAL PARTNERS</text>
+      </svg>
+    </div>
+
+    <div id="export-linkedin-square">
+      <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <rect width="400" height="400" fill="#1B2A4A"/>
+        <text x="200" y="189" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="80" font-weight="400" letter-spacing="5" fill="#E8E4DD">DalFort</text>
+        <line x1="40" y1="224" x2="179" y2="224" stroke="#C8945A" stroke-width="1.5"/>
+        <polygon points="200,209 203.8,220.4 215,220.4 206,227.6 209,239 200,231.8 191,239 194,227.6 185,220.4 196.2,220.4" fill="#C8945A"/>
+        <line x1="221" y1="224" x2="360" y2="224" stroke="#C8945A" stroke-width="1.5"/>
+        <text x="200" y="269" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="10" fill="#E8E4DD">CAPITAL PARTNERS</text>
+      </svg>
+    </div>
+
+    <div id="export-og-image">
+      <svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1200" height="630" fill="#1B2A4A"/>
+        <text x="600" y="290" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="105" font-weight="400" letter-spacing="12.5" fill="#E8E4DD">DalFort</text>
+        <line x1="275" y1="335" x2="560" y2="335" stroke="#C8945A" stroke-width="1.875"/>
+        <polygon points="600,310 606,329 625,329 610,341 615,360 600,348 585,360 590,341 575,329 594,329" fill="#C8945A"/>
+        <line x1="640" y1="335" x2="925" y2="335" stroke="#C8945A" stroke-width="1.875"/>
+        <text x="600" y="410" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="29" font-weight="500" letter-spacing="15" fill="#E8E4DD">CAPITAL PARTNERS</text>
+      </svg>
+    </div>
+
+    <div id="export-linkedin-banner">
+      <svg width="1128" height="191" viewBox="0 0 1128 191" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1128" height="191" fill="#1B2A4A"/>
+        <line x1="0" y1="0" x2="1128" y2="0" stroke="#C8945A" stroke-width="1.5"/>
+        <g transform="translate(273.6 38) scale(1.4375)">
+          <text x="190" y="46" text-anchor="end" font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="400" letter-spacing="3" fill="#E8E4DD">DalFort</text>
+          <line x1="202" y1="10" x2="202" y2="30" stroke="#C8945A" stroke-width="0.75"/>
+          <polygon points="202,33 203.6,37 207,37 204.2,39.5 205.2,43 202,40.5 198.8,43 199.8,39.5 197,37 200.4,37" fill="#C8945A"/>
+          <line x1="202" y1="46" x2="202" y2="68" stroke="#C8945A" stroke-width="0.75"/>
+          <text x="214" y="35" text-anchor="start" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="500" letter-spacing="4.5" fill="#E8E4DD">CAPITAL</text>
+          <text x="214" y="49" text-anchor="start" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="500" letter-spacing="4.5" fill="#E8E4DD">PARTNERS</text>
+        </g>
+      </svg>
+    </div>
+
+  </div><!-- /export pool -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="../v2/index.html" class="logo footer__logo">
+        <span class="logo__wordmark">DalFort</span><svg class="logo__rule" width="88" height="10" viewBox="0 0 88 10" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="5" x2="35" y2="5" stroke="#C8945A" stroke-width="0.75"/><polygon points="44,0 45.5,4 49,4 46.5,6.3 47.4,10 44,7.8 40.6,10 41.5,6.3 39,4 42.5,4" fill="#C8945A"/><line x1="53" y1="5" x2="88" y2="5" stroke="#C8945A" stroke-width="0.75"/></svg><span class="logo__tagline">Capital Partners</span>
+      </a>
+      <div class="footer__col">
+        <h4>Firm</h4>
+        <ul>
+          <li><a href="../v2/about.html">About</a></li>
+          <li><a href="../v2/approach.html">Approach</a></li>
+          <li><a href="../v2/team.html">Team</a></li>
+          <li><a href="../v2/portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="../v2/contact.html">Contact</a></li>
+          <li><a href="https://services.dataexchange.fiscloudservices.com/LogOn/?redirectUrl=%2F" target="_blank" rel="noopener noreferrer">Investor Portal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      &copy; 2026 DalFort Capital Partners. All rights reserved. Dallas, Texas.
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav__toggle').addEventListener('click', function () {
+      this.closest('nav').classList.toggle('nav--open');
+    });
+    document.querySelectorAll('.nav__links a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        this.closest('nav').classList.remove('nav--open');
+      });
+    });
+
+    document.fonts.ready.then(() => {
+      document.getElementById('status').textContent = 'Fonts loaded. Click any button to download.';
+    });
+
+    async function capture(id, filename) {
+      await document.fonts.ready;
+      const el = document.getElementById(id);
+      const canvas = await html2canvas(el, {
+        useCORS: true,
+        allowTaint: false,
+        scale: 1,
+        logging: false,
+        width: el.offsetWidth,
+        height: el.offsetHeight,
+        scrollX: 0,
+        scrollY: 0
+      });
+      const link = document.createElement('a');
+      link.download = filename;
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    }
+  </script>
+</body>
+</html>
