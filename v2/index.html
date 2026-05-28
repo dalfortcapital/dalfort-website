@@ -8,17 +8,54 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- Open Graph -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DalFort Capital Partners">
   <meta property="og:title" content="DalFort Capital Partners">
-  <meta property="og:description" content="Operators who invest. Partners who build. Dallas-based private investment firm focused on the lower middle market.">
-  <meta property="og:image" content="https://dalfortcapital.github.io/dalfort-website/images/og-image.png">
+  <meta property="og:description" content="DalFort Capital Partners is a Dallas-based investment firm focused on the lower middle market. Operators who invest. Partners who build.">
+  <meta property="og:image" content="https://dalfortcapital.com/images/og-image.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:url" content="https://dalfortcapital.com">
+  <meta property="og:url" content="https://dalfortcapital.com/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DalFort Capital Partners">
+  <meta name="twitter:description" content="DalFort Capital Partners is a Dallas-based investment firm focused on the lower middle market. Operators who invest. Partners who build.">
+  <meta name="twitter:image" content="https://dalfortcapital.com/images/og-image.png">
+
+  <link rel="canonical" href="https://dalfortcapital.com/">
   <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "DalFort Capital Partners",
+    "alternateName": "DalFort Capital",
+    "url": "https://dalfortcapital.com",
+    "logo": "https://dalfortcapital.com/images/og-image.png",
+    "image": "https://dalfortcapital.com/images/og-image.png",
+    "description": "DalFort Capital Partners is a Dallas-based investment firm focused on the lower middle market. Operators who invest. Partners who build.",
+    "email": "info@dalfortcapital.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3963 Maple Avenue, Suite 170",
+      "addressLocality": "Dallas",
+      "addressRegion": "TX",
+      "postalCode": "75219",
+      "addressCountry": "US"
+    },
+    "areaServed": "US",
+    "sameAs": [
+      "https://www.linkedin.com/company/dalfort-capital-partners"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -50,7 +87,7 @@
 
     <!-- Hero -->
     <section class="hero">
-      <video class="hero__video" autoplay muted loop playsinline>
+      <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="../images/hero-poster.jpg">
         <source src="../images/hero-dallas.mp4" type="video/mp4">
       </video>
       <div class="hero__overlay"></div>

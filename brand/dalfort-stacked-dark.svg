@@ -1,0 +1,8 @@
+<svg width="800" height="224" viewBox="0 0 400 112" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="112" fill="#1B2A4A"/>
+  <text x="200" y="52" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="42" font-weight="400" letter-spacing="5" fill="#E8E4DD">DalFort</text>
+  <line x1="70" y1="70" x2="184" y2="70" stroke="#C8945A" stroke-width="0.75"/>
+  <polygon points="200,60 202.5,67.6 210,67.6 204,72.4 206,80 200,75.2 194,80 196,72.4 190,67.6 197.5,67.6" fill="#C8945A"/>
+  <line x1="216" y1="70" x2="330" y2="70" stroke="#C8945A" stroke-width="0.75"/>
+  <text x="200" y="100" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="6" fill="#E8E4DD">CAPITAL PARTNERS</text>
+</svg>

@@ -530,6 +530,15 @@ nav.nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotat
   transform: translateY(-2px);
 }
 
+.team-card:focus {
+  outline: none;
+}
+
+.team-card:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+
 .team-avatar {
   width: 52px;
   height: 52px;
